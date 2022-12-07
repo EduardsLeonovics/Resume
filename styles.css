@@ -31,6 +31,7 @@ body {
    grid-column: span 5;
    background-color: #EBEBE8;
    height: 100%;
+   padding-bottom: 1rem;
 }
 
 .left-content{
