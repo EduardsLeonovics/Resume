@@ -124,11 +124,11 @@ body {
 }
 
 .SQL-Progress{
-   width: 50%;
+   width: 62%;
 }
 
 .KNIME-Progress {
-   width: 40%;
+   width: 45%;
 }
 
 .PBI-Progress{
@@ -140,7 +140,7 @@ body {
 }
 
 .PYTHON-Progress{
-   width: 30%;
+   width: 36%;
 }
 
 .EXCEL-Progress{
