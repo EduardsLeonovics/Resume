@@ -1,4 +1,15 @@
-*{
+:root {
+   --accent_one: #353659;
+   --accent_two: #bebed1;
+   --accent_three: #6f6f79;
+   --accent_four: #85BEDA;
+   --alt: #dec40c;
+   --lum: #481335;
+   --background: #272842;
+   --background_alter: #EBEBE8;
+}
+
+* {
    padding: 0;
    margin: 0;
    box-sizing: border-box;
@@ -7,8 +18,103 @@
 }
 
 body {
-   background-color: #B48994;
+   background-color: var(--accent_two);
 }
+
+
+header {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   padding: 30px 10%;
+   margin-right: 180px;
+   grid-column: 1 / 2;
+
+}
+
+header a {
+   text-decoration: none;
+}
+
+.nav_links {
+   list-style: none;
+
+
+}
+
+.nav_links li {
+   display: inline-block;
+   padding: 0px 20px;
+}
+
+
+.nav_links li a {
+   color: black;
+   font-weight: 300;
+   transition: all 0.3s ease 0s;
+   transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+   color: var(--accent_two);
+}
+
+button {
+   margin-left: 20px;
+   padding: 9px 25px;
+   background-color: var(--lum);
+   border: none;
+   border-radius: 50px;
+   cursor: pointer;
+   color: var(--background_alter);
+   transition: all 0.3s ease 0s;
+}
+
+button:hover {
+   background-color: var(--accent_four);
+}
+
+
+.my_contact {
+   font-size: 16px;
+   color: var(--lum);
+   text-decoration: none;
+}
+
+header nav {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   align-items: center;
+   justify-content: center;
+
+}
+
+header nav ul {
+   display: flex;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+
+}
+
+header nav ul li {
+   margin-right: 1rem;
+   text-align: center;
+}
+
+header nav ul li a {
+   color: var(--background_alter);
+   text-decoration: none;
+   font-size: 1.2rem;
+   text-align: center;
+}
+
+header nav ul li a:hover {
+   color: var(--accent_four);
+}
+
 
 
 .main-content{
@@ -21,17 +127,16 @@ body {
 }
 
 .left-section{
-   grid-column: span ;
+   grid-column: span;
    height: 100%;
-   background-color: #481335;
+   background-color: var(--background);
 
 }
 
 .right-section{
    grid-column: span 5;
-   background-color: #EBEBE8;
+   background-color: var(--background_alter);
    height: 100%;
-   padding-bottom: 1rem;
 }
 
 .left-content{
@@ -39,40 +144,40 @@ body {
 }
 
 
-.profile{
+.profile {
    width: 100%;
-   border-bottom: 1px solid #3A3B3C
+   border-bottom: 1px solid var(--accent_three);
 }
 
 .profile img{
    width: 100%;
    border-radius: 50%;
-   border: 8px solid #EBEBE8;
+   border: 8px solid var(--background_alter);
 }
 
-.name{
+.name {
    font-size: 2rem;
-   color: #EBEBE8;
+   color: var(--background_alter);
    text-align: center;
    text-transform: uppercase;
    letter-spacing: 1px;
    padding: 1.2rem 0;
 }
 
-.career{
+.career {
    font-size: 1.2rem;
-   color: #EBEBE8;
+   color: var(--background_alter);
    text-align: center;
    text-transform: uppercase;
    letter-spacing: 2px;
    border-bottom: 10rem
 }
 
-.main-title{
+.main-title {
    font-size: 1.8rem;
    text-transform: uppercase;
    letter-spacing: 1px;
-   color: #EBEBE8;
+   color: var(--background_alter);
    padding-top: 3rem;
 }
 
@@ -86,14 +191,14 @@ body {
    display: flex;
    align-items: center;
    font-size: 1.3rem;
-   color: #EBEBE8;
+   color: var(--background_alter);
 
 }
 
 .contact-info ul li i{
    padding-right: 1rem;
    font-size: 1.1rem;
-   color: #85BEDA;
+   color: var(--accent_four);
 }
 
 .skills-section ul{
@@ -109,7 +214,7 @@ body {
 .progress-bar{
    width: 100%;
    height: 0.4rem;
-   background-color: #0F2846;
+   background-color: var(--accent_three);
    position: relative;
    border-radius: 12px;
 }
@@ -118,17 +223,17 @@ body {
    height: 100%;
    position: absolute;
    left: 0;
-   background-color: #85BEDA;
+   background-color: var(--accent_four);
    border-radius: 12px;
 
 }
 
 .SQL-Progress{
-   width: 62%;
+   width: 50%;
 }
 
 .KNIME-Progress {
-   width: 45%;
+   width: 40%;
 }
 
 .PBI-Progress{
@@ -140,7 +245,7 @@ body {
 }
 
 .PYTHON-Progress{
-   width: 36%;
+   width: 30%;
 }
 
 .EXCEL-Progress{
@@ -149,7 +254,7 @@ body {
 
 .skill-title{
    text-transform: uppercase;
-   color: #EBEBE8;
+   color: var(--background_alter);
    font-size: 1.1rem;
 
 }
@@ -158,21 +263,21 @@ body {
    padding-top: 2rem;
    font-size: 1.2rem;
    text-transform: uppercase;
-   color: #EBEBE8;
+   color: var(--background_alter);
 }
 
 .Violeta{
-   color: #85BEDA;
+   color: var(--accent_four);
    padding: 0.4rem 0;
 }
 
 .Jeka {
-   color: #85BEDA;
+   color: var(--accent_four);
    padding: 0.4rem 0;
 }
 
 .references-section li{
-   color: #EBEBE8;
+   color: var(--background_alter);
    padding: 0.2rem 0;
 
 }
@@ -180,7 +285,7 @@ body {
 .references-section li i {
    padding-right: 0.5rem;
    font-size: 1rem;
-   color: #85BEDA;
+   color: var(--accent_four);
 }
 
 .right-main-content{
@@ -191,7 +296,7 @@ body {
 .right-title-first {
    letter-spacing: 1px;
    text-transform: uppercase;
-   color: #3A3B3C;
+   color: var(--accent_three);
    margin-bottom: 1.5rem;
    position: relative;
 }
@@ -199,7 +304,7 @@ body {
 .right-title{
    letter-spacing: 1px;
    text-transform: uppercase;
-   color: #0F2846;
+   color: var(--background);
    margin-bottom: 1.5rem;
    position: relative;
 }
@@ -213,7 +318,7 @@ body {
    position:absolute;
    width: 60%;
    height: 0.1rem;
-   background-color: #0F2846;
+   background-color: var(--background);
    border-radius: 10px;
    right: 0;
    top: 50%;
@@ -222,13 +327,13 @@ body {
 
 .first-para{
    line-height: 1.8rem;
-   color: #481335;
+   color: var(--lum);
    font-size: 1.3rem;
 }
 
 .para{
    line-height: 1.8rem;
-   color: #481335;
+   color: var(--lum);
    font-size: 1.1rem;
 
 }
@@ -250,19 +355,19 @@ body {
 .tl-title{
    letter-spacing: 1px;
    font-size: 1.3rem;
-   color: #0F2846;
+   color: var(--background);
    text-transform: uppercase;
 }
 
 .tl-title-2 {
    letter-spacing: 1px;
    font-size: 1.3rem;
-   color: #0F2846;
+   color: var(--background);
    text-transform: uppercase;
 }
 
 .tl-content{
-   border-left: 1px solid #481335;
+   border-left: 1px solid var(--lum);
    padding-left: 2rem;
    position: relative;
    padding-bottom: 2rem;
@@ -273,7 +378,7 @@ body {
    position:absolute;
    width: 0.7rem;
    height: 0.7rem;
-   background-color: #EA4A72;
+   background-color: var(--lum);
    border-radius: 50%;
    transform: translateX(-50%);
    left: 0;
@@ -281,8 +386,14 @@ body {
 
 
 .p{
-   color: #481335;
+   color: var(--lum);
    text-align: left;
    font-size: 1rem;
    line-height: 1.5rem;
+   padding-bottom: 1rem;
 }
+
+
+
+
+
