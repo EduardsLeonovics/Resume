@@ -229,11 +229,11 @@ header nav ul li a:hover {
 }
 
 .SQL-Progress{
-   width: 50%;
+   width: 70%;
 }
 
 .KNIME-Progress {
-   width: 40%;
+   width: 65%;
 }
 
 .PBI-Progress{
@@ -241,15 +241,19 @@ header nav ul li a:hover {
 }
 
 .HC-Progress{
-   width: 30%;
+   width: 50%;
 }
 
 .PYTHON-Progress{
-   width: 30%;
+   width: 56%;
+}
+
+.java-Progress {
+   width: 43%;
 }
 
 .EXCEL-Progress{
-   width: 90%;
+   width: 95%;
 }
 
 .skill-title{
@@ -392,8 +396,3 @@ header nav ul li a:hover {
    line-height: 1.5rem;
    padding-bottom: 1rem;
 }
-
-
-
-
-
