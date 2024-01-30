@@ -1,3 +1,10 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+
 :root {
    --accent_one: #353659;
    --accent_two: #bebed1;
@@ -201,62 +208,41 @@ header nav ul li a:hover {
    color: var(--accent_four);
 }
 
-.skills-section ul{
+.skills-section {
+   max-width: 600px;
+   margin: auto;
+}
+
+.main-title {
+   font-size: 1.5em;
+   margin-bottom: 10px;
+   text-align: left;
+}
+
+.skills-columns {
+   display: flex;
    padding-top: 2rem;
-}
-
-.skills-section ul li{
-   display: grid;
-   grid-template-columns: repeat(2,1fr);
-   align-items: center;
-}
-
-.progress-bar{
-   width: 100%;
-   height: 0.4rem;
-   background-color: var(--accent_three);
-   position: relative;
-   border-radius: 12px;
-}
-
-.progress{
-   height: 100%;
-   position: absolute;
-   left: 0;
-   background-color: var(--accent_four);
-   border-radius: 12px;
-
-}
-
-.SQL-Progress{
-   width: 50%;
-}
-
-.KNIME-Progress {
-   width: 40%;
-}
-
-.PBI-Progress{
-   width: 65%;
-}
-
-.HC-Progress{
-   width: 30%;
-}
-
-.PYTHON-Progress{
-   width: 30%;
-}
-
-.EXCEL-Progress{
-   width: 90%;
-}
-
-.skill-title{
-   text-transform: uppercase;
-   color: var(--background_alter);
+   justify-content: space-between;
    font-size: 1.1rem;
+   text-align: center;
+   color: var(--background_alter);
+   font-weight: normal;
+   text-transform:initial;
+}
 
+.skills-column {
+   flex: 1;
+   margin-right: 20px;
+   
+}
+
+.skill {
+   margin-bottom: 10px;
+}
+
+.skill-title {
+   font-weight: normal;
+   margin-bottom: 5px;
 }
 
 .sub-title{
