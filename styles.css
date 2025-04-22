@@ -252,12 +252,7 @@ header nav ul li a:hover {
    color: var(--background_alter);
 }
 
-.Violeta{
-   color: var(--accent_four);
-   padding: 0.4rem 0;
-}
-
-.Jeka {
+.lead{
    color: var(--accent_four);
    padding: 0.4rem 0;
 }
@@ -328,10 +323,17 @@ header nav ul li a:hover {
    padding-bottom: 2rem;
 }
 
+.tech-used {
+   color: var(--accent_three);
+   font-size: 0.95rem;
+   font-style: italic;
+   margin-top: 0.3rem;
+}
 
 .timeline{
   display: grid;
-  grid-template-columns: repeat(2,1fr); 
+  grid-template-columns: repeat(2,1fr);
+  
 }
 
 .timeline .fa{
@@ -350,6 +352,7 @@ header nav ul li a:hover {
    font-size: 1.3rem;
    color: var(--background);
    text-transform: uppercase;
+   margin-bottom: 0.8rem;
 }
 
 .tl-content{
@@ -357,6 +360,7 @@ header nav ul li a:hover {
    padding-left: 2rem;
    position: relative;
    padding-bottom: 2rem;
+   
 }
 
 .tl-title-2::before{
@@ -372,6 +376,21 @@ header nav ul li a:hover {
 
 
 .p{
+   color: var(--lum);
+   text-align: left;
+   font-size: 1rem;
+   line-height: 1.5rem;
+   padding-bottom: 1rem;
+}
+
+.mini-title {
+   font-weight: bold;
+   font-size: 1.05rem;
+   margin-bottom: 0.2em;
+   color: var(--background);
+}
+
+.mini-section {
    color: var(--lum);
    text-align: left;
    font-size: 1rem;
