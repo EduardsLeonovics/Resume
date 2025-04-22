@@ -1,44 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Function to handle toggle behavior for any button-content pair
-    function setupToggleButtons(buttonSelector, contentSelector, openClass, toggleText = ['Read More...', 'Read Less...']) {
-        const buttons = document.querySelectorAll(buttonSelector);
+const btn = document
+    .querySelector('.read-more-btn');
 
-        buttons.forEach(button => {
-            button.addEventListener('click', () => {
-                // Find the closest card to scope the content search
-                const card = button.closest('.card');
-                if (!card) return; // Skip if no card parent is found
+const text = document
+    .querySelector('.card__read-more');
 
-                // Find the content to toggle within the same card
-                const content = card.querySelector(contentSelector);
-                if (!content) return; // Skip if content is not found
+const cardHolder = document
+    .querySelector('.card-holder');
 
-                // Toggle the open class
-                content.classList.toggle(openClass);
+cardHolder
+    .addEventListener('click', e => {
 
-                // Update button text based on content state
-                button.textContent = content.classList.contains(openClass) ? toggleText[1] : toggleText[0];
+        const current = e.target;
 
-                // Accessibility: Update ARIA attributes
-                button.setAttribute('aria-expanded', content.classList.contains(openClass));
-                content.setAttribute('aria-hidden', !content.classList.contains(openClass));
-            });
-        });
-    }
+        const isReadMoreBtn = current.className.includes('read-more-btn');
 
-    // Initialize toggle for read-more buttons
-    setupToggleButtons(
-        '.read-more-btn', // Button selector
-        '.card__read-more', // Content selector
-        'card__read-more--open', // Class to toggle
-        ['Read More...', 'Read Less...'] // Button text options
-    );
+        if (!isReadMoreBtn)
+            return;
 
-    // Example for future buttons (e.g., a "Show Details" button)
-    // setupToggleButtons(
-    //     '.show-details-btn',
-    //     '.card__details',
-    //     'card__details--open',
-    //     ['Show Details', 'Hide Details']
-    // );
-});
+        const currentText = e.target.parentNode.querySelector('.card__read-more');
+
+        currentText.classList.toggle('card__read-more--open');
+
+        current.textContent = current.textContent.includes('Read More...') ? 'Read Less...' : 'Read More...';
+
+    });
