@@ -22,6 +22,7 @@ body {
 }
 
 
+
 header {
    display: flex;
    justify-content: flex-end;
@@ -115,13 +116,22 @@ header nav ul li a:hover {
    color: var(--accent_four);
 }
    
-   main {
-      padding: 1rem;
-      margin: 4rem auto;
-      max-width: 80%;
-      display: flex;
-      flex-wrap: wrap;
-   }
+main {
+   padding: 1rem;
+   margin: 4rem auto;
+   max-width: 80%;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.main-content {
+   margin: 0.5rem 0 0.5rem 1rem; /* Adjusted to reduce left margin */
+   width: 95%; /* Increased width to use more screen space */
+   max-width: none; /* Remove max-width restriction */
+   left: 0; /* Ensure no left offset */
+   padding-left: 0; /* Remove any left padding */
+}
+
 
 section {
 margin-top: 6rem;
@@ -261,22 +271,6 @@ justify-content: flex-start;
 .navigation-auto div:not(:last-child) {
    margin-right: 40px;
 
-}
-
-#radio1:checked~.navigation-auto .auto-btn1 {
-   background: var(--accent_four);
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-   background: var(--accent_four);
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-   background: var(--accent_four);;
-}
-
-#radio4:checked~.navigation-auto .auto-btn4 {
-   background: var(--accent_four);
 }
 
 .card-holder {
@@ -426,54 +420,19 @@ p {
    margin-left: -60%;
  }
  
+ #radio17:checked~.first {
+   margin-left: -20%;
+ }
+ 
+ #radio18:checked~.first {
+   margin-left: -40%;
+ }
+ 
+ #radio19:checked~.first {
+   margin-left: -60%;
+ }
+ 
 
-
- 
- #radio5:checked~.navigation-auto.auto-btn5 {
-   background:  var(--accent_four);;
- }
- 
- #radio6:checked~.navigation-auto.auto-btn6 {
-   background:  var(--accent_four);;
- }
- 
- #radio7:checked~.navigation-auto.auto-btn7 {
-   background:  var(--accent_four);;
- }
- 
- #radio8:checked~.navigation-auto.auto-btn8 {
-   background:  var(--accent_four);;
- }
-
- 
-#radio9:checked~.navigation-auto.auto-btn1 {
-   background:  var(--accent_four);;
- }
- 
- #radio10:checked~.navigation-auto.auto-btn2 {
-   background:  var(--accent_four);;
- }
- 
- #radio11:checked~.navigation-auto.auto-btn3 {
-   background:  var(--accent_four);;
- }
- 
- #radio12:checked~.navigation-auto.auto-btn4 {
-   background:  var(--accent_four);;
- }
- 
- #radio13:checked~.navigation-auto.auto-btn5 {
-   background:  var(--accent_four);;
- }
- 
- #radio14:checked~.navigation-auto.auto-btn6 {
-   background:  var(--accent_four);;
- }
- 
- #radio15:checked~.navigation-auto.auto-btn7 {
-   background:  var(--accent_four);;
- }
- 
- #radio16:checked~.navigation-auto.auto-btn8 {
-   background:  var(--accent_four);;
+ input[type="radio"]:checked ~ .navigation-auto [class*="auto-btn"] {
+   background: var(--accent_four);
  }
