@@ -273,22 +273,6 @@ justify-content: flex-start;
 
 }
 
-#radio1:checked~.navigation-auto .auto-btn1 {
-   background: var(--accent_four);
-}
-
-#radio2:checked~.navigation-auto .auto-btn2 {
-   background: var(--accent_four);
-}
-
-#radio3:checked~.navigation-auto .auto-btn3 {
-   background: var(--accent_four);;
-}
-
-#radio4:checked~.navigation-auto .auto-btn4 {
-   background: var(--accent_four);
-}
-
 .card-holder {
    display: flex;
    align-items: flex-start;
@@ -436,54 +420,19 @@ p {
    margin-left: -60%;
  }
  
+ #radio17:checked~.first {
+   margin-left: -20%;
+ }
+ 
+ #radio18:checked~.first {
+   margin-left: -40%;
+ }
+ 
+ #radio19:checked~.first {
+   margin-left: -60%;
+ }
+ 
 
-
- 
- #radio5:checked~.navigation-auto.auto-btn5 {
-   background:  var(--accent_four);;
- }
- 
- #radio6:checked~.navigation-auto.auto-btn6 {
-   background:  var(--accent_four);;
- }
- 
- #radio7:checked~.navigation-auto.auto-btn7 {
-   background:  var(--accent_four);;
- }
- 
- #radio8:checked~.navigation-auto.auto-btn8 {
-   background:  var(--accent_four);;
- }
-
- 
-#radio9:checked~.navigation-auto.auto-btn1 {
-   background:  var(--accent_four);;
- }
- 
- #radio10:checked~.navigation-auto.auto-btn2 {
-   background:  var(--accent_four);;
- }
- 
- #radio11:checked~.navigation-auto.auto-btn3 {
-   background:  var(--accent_four);;
- }
- 
- #radio12:checked~.navigation-auto.auto-btn4 {
-   background:  var(--accent_four);;
- }
- 
- #radio13:checked~.navigation-auto.auto-btn5 {
-   background:  var(--accent_four);;
- }
- 
- #radio14:checked~.navigation-auto.auto-btn6 {
-   background:  var(--accent_four);;
- }
- 
- #radio15:checked~.navigation-auto.auto-btn7 {
-   background:  var(--accent_four);;
- }
- 
- #radio16:checked~.navigation-auto.auto-btn8 {
-   background:  var(--accent_four);;
+ input[type="radio"]:checked ~ .navigation-auto [class*="auto-btn"] {
+   background: var(--accent_four);
  }
